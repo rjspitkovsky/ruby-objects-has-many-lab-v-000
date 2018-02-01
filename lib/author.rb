@@ -13,16 +13,16 @@ attr_accessor :name
   def add_post(post)
     @posts << post
     post.author = self
-  end 
+  end
 
   def add_post_by_title(title)
     new_post = Post.new(title)
-    @posts << new_post 
-    post.author = self 
+    @posts << new_post
+    post.author = self
     @@post_count += 1
-  end 
+  end
 
-  def self.post_count 
-    @@post_count 
+  def self.post_count
+    @@post_count
   end  
 end
